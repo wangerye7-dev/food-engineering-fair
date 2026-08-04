@@ -168,3 +168,20 @@ th{background:var(--green-50);color:var(--green-950);position:sticky;top:0}
  body{background:#fff}
  .card,.form-card,.success-box{box-shadow:none}
 }
+
+/* V2 dual-major random challenge */
+.challenge-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:22px;align-items:start}
+.challenge-topline{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.module-processing{background:#e8f3ff;color:#245d87}.module-quality{background:#fff1e1;color:#8a5d16}.module-joint{background:#eee9fb;color:#5a3f8b}
+.dual-major-grid,.result-major-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
+.major-track,.result-major{border:1px solid var(--line);border-radius:18px;padding:20px;background:#fff}
+.major-track.processing,.result-major.processing{border-top:5px solid #2c6798}.major-track.quality,.result-major.quality{border-top:5px solid #c9922e}
+.major-track ul{padding-left:20px;margin-bottom:0}.major-track li{margin:5px 0}
+.mini-score{border:1px solid var(--line);border-radius:14px;padding:12px;margin:10px 0;display:flex;flex-direction:column}.mini-score.processing{border-left:5px solid #2c6798}.mini-score.quality{border-left:5px solid #c9922e}.mini-score.joint{border-left:5px solid #7356a5}
+.question-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.question-stem{font-size:18px;line-height:1.8}
+.option-letter,.option-check{width:28px;height:28px;border-radius:50%;background:var(--green-100);display:grid;place-items:center;flex:0 0 auto;font-weight:700}.choice{display:flex;gap:12px;align-items:flex-start}.choice.compact{display:inline-flex;width:auto}.choice:disabled{cursor:default;opacity:.9}
+.order-zone{border:1px dashed #95b8a7;border-radius:16px;padding:15px;background:var(--green-50);margin:15px 0}.order-title{font-weight:700;margin-bottom:10px}.order-selected,.order-pool{display:flex;gap:9px;flex-wrap:wrap}.order-chip{border:1px solid #9bc5b2;background:#fff;border-radius:12px;padding:9px 12px;display:flex;gap:8px;align-items:center}.order-chip b{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--green-700);color:#fff}.text-btn{border:0;background:transparent;color:var(--green-800);padding:9px 0;font-weight:700}
+.answer-feedback{display:grid;grid-template-columns:100px 1fr;gap:18px;border:1px solid #add1bd;border-left:5px solid var(--green-700);border-radius:16px;padding:18px;margin-top:20px;background:var(--green-50)}.answer-feedback.critical{border-color:#efb7b2;border-left-color:var(--red-600);background:#fff4f3}.feedback-score strong{font-size:38px;color:var(--green-900)}.feedback-score span{display:block;color:var(--muted)}.redline-note{color:var(--red-600);font-weight:700}
+.report-head{text-align:center}.big-score{font-size:56px;font-weight:800;color:var(--green-900);line-height:1}.big-score small,.joint-score small{font-size:18px;color:var(--muted)}.result-title{font-weight:700}.dimension-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}.joint-result{display:flex;justify-content:space-between;align-items:center;gap:20px;border:1px solid #d8ccef;background:#f8f5ff;border-radius:18px;padding:20px;margin-top:16px}.joint-score{font-size:42px;font-weight:800;color:#5a3f8b}.release-box{border:1px solid #add1bd;background:var(--green-50);border-radius:18px;padding:20px;margin-top:16px}.release-box.critical{border-color:#efb7b2;background:#fff4f3}.answer-details{margin-top:16px;border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px}.answer-details summary{cursor:pointer;font-weight:700}.detail-row{display:flex;justify-content:space-between;gap:15px;padding:12px 0;border-bottom:1px solid var(--line)}.detail-row span{display:block;font-size:13px;color:var(--muted)}
+@media(max-width:900px){.challenge-layout{grid-template-columns:1fr}.dual-major-grid,.result-major-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.answer-feedback{grid-template-columns:1fr}.joint-result,.detail-row{align-items:flex-start;flex-direction:column}.question-stem{font-size:16px}}
