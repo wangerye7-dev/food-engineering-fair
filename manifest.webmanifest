@@ -1,9 +1,10 @@
 {
-  "name": "食品工程学院农洽会互动平台",
-  "short_name": "食工互动平台",
-  "start_url": "index.html",
+  "name": "食品产业体验门户",
+  "short_name": "食工展会门户",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#f3f7f5",
-  "theme_color": "#1f4d3f",
+  "background_color": "#f2f7f4",
+  "theme_color": "#17513f",
   "icons": []
 }
